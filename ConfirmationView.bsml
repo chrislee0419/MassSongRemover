@@ -1,0 +1,47 @@
+﻿<vertical spacing="10" pad="5">
+  <horizontal spacing="5">
+    <vertical bg="round-rect-panel" pad="5">
+      <raw-image source="MassSongRemover.removedsongsfolder.png"
+                 preferred-width="30"/>
+    </vertical>
+    <vertical bg="round-rect-panel" preferred-width="80" spacing="3" pad="5">
+      <text text="All custom songs that not have not been &lt;color=#AAFFAA&gt;&lt;b&gt;FAVORITED&lt;b&gt;&lt;/color&gt; will be removed from the game, but will still exist in storage. WIP songs will not be removed."
+            font-size="3"
+            overflow-mode="Overflow"
+            word-wrapping="true" />
+      <vertical spacing="1">
+        <text text="The removed songs will be moved to ..."
+              font-size="3"
+              overflow-mode="Overflow"
+              word-wrapping="true" />
+        <clickable-text id="removed-folder-clickable-text"
+                        text="~removed-folder-text"
+                        font-size="2.6"
+                        font-color="~removed-folder-text-color"
+                        overflow-mode="Overflow"
+                        word-wrapping="true"
+                        on-click="removed-folder-clicked" />
+        <text text="for you to double-check and permanently delete later."
+              font-size="3"
+              overflow-mode="Overflow"
+              word-wrapping="true" />
+      </vertical>
+      <horizontal bg="round-rect-panel" child-align="MiddleCenter">
+        <text text="&lt;b&gt;Do you wish to continue?&lt;/b&gt;"
+              font-size="4"
+              font-align="Center"
+              overflow-mode="Overflow"
+              word-wrapping="true" />
+      </horizontal>
+    </vertical>
+  </horizontal>
+  <horizontal spacing="10">
+    <button text="Cancel"
+            interactable="~button-interactivity"
+            on-click="cancel-button-clicked" />
+    <button text ="Remove"
+            interactable="~button-interactivity"
+            stroke-color="#FF8888"
+            on-click="remove-button-clicked" />
+  </horizontal>
+</vertical>
